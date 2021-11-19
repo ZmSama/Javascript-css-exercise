@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" sans-serif;
+}
+
+body {
+  background-color: #0a2a43;
+  min-height: 1500px;
+}
+
+/* 为所有的图片添加一个背景色，置于上层 */
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+
+/* 利用颜色混合模式修改图片的色调，关键代码最后一行 */
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text {
+  font-size: 10em;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+#road {
+  z-index: 2;
+}
+#des {
+  color: #fff;
+  font-size: 26px;
+  word-spacing: 5px;
+  line-height: 47px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
