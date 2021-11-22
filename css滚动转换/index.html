@@ -1,0 +1,32 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: ZmSama
+ * @Date: 2021-11-20 11:06:04
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>css滚动转换</title>
+  </head>
+  <body>
+    <section>
+      <span class="curve">
+        <img src="./assets/curve.png" alt="" />
+      </span>
+    </section>
+
+    <script>
+      let scroll = document.querySelector(".curve");
+      window.addEventListener("scroll", (e) => {
+        console.log(111);
+        let value = 1 + window.scrollY / -500;
+        scroll.style.transform = `scaleY(${value})`;
+      });
+    </script>
+  </body>
+</html>
