@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  background: #fff;
+  border: 10px solid skyblue;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-radius 0.4s;
+  position: relative;
+}
+
+div:hover {
+  border-radius: 0;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: skyblue;
+}

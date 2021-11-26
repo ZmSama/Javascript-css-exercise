@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.card {
+  background: #5186e6;
+  width: 300px;
+  height: 180px;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.title {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.des {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  font-size: 16px;
+  color: #ccc;
+}
+.price {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 44px;
+  z-index: 1;
+}
+.start {
+  position: absolute;
+  width: 160px;
+  height: 16px;
+  top: 50%;
+  left: 20%;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffff, #5186e6);
+  opacity: 0.3;
+  transform: rotateZ(-45deg);
+  z-index: -1;
+}
+
+.start::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 16px;
+  top: -109px;
+  left: -20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffff, #5186e6);
+  opacity: 0.3;
+  transform: rotateZ(0deg);
+  z-index: -1;
+}
+
+.start::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 16px;
+  top: 73px;
+  left: 139px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffff, #5186e6);
+  opacity: 0.3;
+  transform: rotateZ(0deg);
+  z-index: -1;
+}
