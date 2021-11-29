@@ -13,3 +13,5 @@
 3. [全屏视频背景](https://zmsama.github.io/Javascript-css-exercise/全屏视频背景)
 4. [Boxshadow记载动画](https://zmsama.github.io/Javascript-css-exercise/Boxshadow加载动画)
 5. [CSS反向悬停](https://zmsama.github.io/Javascript-css-exercise/CSS反向悬停)
+6. [颜色过渡卡片](https://zmsama.github.io/Javascript-css-exercise/颜色过渡卡片)
+7. [CSS悬停效果之字形D](https://zmsama.github.io/Javascript-css-exercise/CSS悬停效果之字形D)

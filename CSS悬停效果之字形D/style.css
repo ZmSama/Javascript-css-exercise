@@ -12,11 +12,12 @@ div {
   height: 300px;
   width: 300px;
   background: #fff;
-  border: 10px solid skyblue;
+  border: 10px solid #03a9f4;
   border-radius: 50%;
   cursor: pointer;
   transition: border-radius 0.4s;
   position: relative;
+  z-index: 1;
 }
 
 div:hover {
@@ -30,5 +31,23 @@ div::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: skyblue;
+  background: #03a9f4;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+
+div p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+div:hover p {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
