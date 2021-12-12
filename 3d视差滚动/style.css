@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 .container {
@@ -21,6 +22,7 @@ body {
 .card {
   width: 27rem;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   min-height: 80vh;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -39,6 +41,7 @@ body {
 .info h1 {
   font-size: 2rem;
   transition: 0.7s all ease;
+  -webkit-transition: 0.7s all ease;
   /* text-align: center; */
 }
 .info h3 {
@@ -46,11 +49,13 @@ body {
   font-size: 1.5rem;
   padding: 10px 0;
   font-weight: lighter;
+  -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
 }
 .size {
   display: flex;
   justify-content: space-between;
+  -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
 }
 
@@ -78,5 +83,6 @@ button.active {
   border-radius: 40px;
   cursor: pointer;
   transition: 0.7s all ease;
+  -webkit-transition: 0.7s all ease;
   background-color: #2ecc71;
 }

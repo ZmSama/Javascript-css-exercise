@@ -15,3 +15,4 @@
 5. [CSS反向悬停](https://zmsama.github.io/Javascript-css-exercise/CSS反向悬停)
 6. [颜色过渡卡片](https://zmsama.github.io/Javascript-css-exercise/颜色过渡卡片)
 7. [CSS悬停效果之字形D](https://zmsama.github.io/Javascript-css-exercise/CSS悬停效果之字形D)
+8. [创建css图标悬效果](https://zmsama.github.io/Javascript-css-exercise/创建css图标悬效果)
