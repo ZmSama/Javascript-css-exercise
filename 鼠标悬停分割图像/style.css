@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  /* background: #3498db; */
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  position: relative;
+}
+.box .title {
+  text-align: center;
+  margin-top: 20px;
+}
+.box .auth {
+  text-align: center;
+  padding-top: 8px;
+}
+.box .info {
+  font-size: 1rem;
+  padding: 20px 60px;
+  word-spacing: 2px;
+  line-height: 50px;
+}
+
+.box::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: red;
+  transition: 0.4s;
+  transform-origin: bottom;
+  background: url(./img/img.jpg);
+  background-size: cover;
+  background-position: 600px;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: blue;
+  transition: 0.3s ease-in;
+  /* z-index: -1; */
+  transform-origin: top;
+  background: url(./img/img.jpg);
+  background-size: cover;
+  background-position: 300px;
+}
+
+.box:hover.box::after {
+  transform: rotateX(90deg);
+}
+.box:hover.box::before {
+  transform: rotateX(90deg) translateY(50%);
+}
