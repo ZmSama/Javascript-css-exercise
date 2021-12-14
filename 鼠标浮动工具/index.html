@@ -1,0 +1,150 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: ZmSama
+ * @Date: 2021-12-14 11:46:54
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鼠标浮动工具</title>
+  </head>
+  <style>
+    #tooltip {
+      background-color: #fff;
+      color: #3498db;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      display: none;
+    }
+    #tooltip[data-show] {
+      display: block;
+    }
+    #arrow,
+    #arrow::before {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: inherit;
+    }
+
+    #arrow {
+      visibility: hidden;
+    }
+
+    #arrow::before {
+      visibility: visible;
+      content: "";
+      transform: rotate(45deg);
+    }
+    #tooltip[data-popper-placement^="top"] > #arrow {
+      bottom: -4px;
+    }
+
+    #tooltip[data-popper-placement^="bottom"] > #arrow {
+      top: -4px;
+    }
+
+    #tooltip[data-popper-placement^="left"] > #arrow {
+      right: -4px;
+    }
+
+    #tooltip[data-popper-placement^="right"] > #arrow {
+      left: -4px;
+    }
+    body {
+      background-color: #34495e;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .scop {
+      width: 400px;
+      height: 400px;
+      border: 2px solid aqua;
+      text-align: center;
+      line-height: 400px;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.3);
+      user-select: none;
+    }
+  </style>
+  <body>
+    <div id="tooltip" role="tooltip">
+      跟随鼠标移动
+      <div id="arrow" data-popper-arrow></div>
+    </div>
+
+    <div class="scop">鼠标移入此处显示</div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script>
+      const tooltip = document.querySelector("#tooltip");
+      const scop = document.querySelector(".scop");
+      function generateGetBoundingClientRect(x = 0, y = 0) {
+        return () => ({
+          width: 0,
+          height: 0,
+          top: y,
+          right: x,
+          bottom: y,
+          left: x,
+        });
+      }
+      const virtualElement = {
+        getBoundingClientRect: generateGetBoundingClientRect(),
+      };
+      const instance = Popper.createPopper(virtualElement, tooltip, {
+        placement: "auto",
+        modifiers: [
+          {
+            name: "offset",
+            options: {
+              offset: [0, 8],
+            },
+          },
+        ],
+      });
+      //   scop.addEventListener("mouseenter", () => {
+      //     tooltip.setAttribute("data-show", "");
+      //   });
+      //   进入的时候展示
+      scop.addEventListener("mousemove", ({ clientX: x, clientY: y }) => {
+        tooltip.setAttribute("data-show", "");
+        virtualElement.getBoundingClientRect = generateGetBoundingClientRect(
+          x,
+          y
+        );
+        instance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: "eventListeners", enabled: true },
+          ],
+        }));
+        instance.update();
+      });
+
+      scop.addEventListener("mouseleave", () => {
+        // Hide the tooltip
+        tooltip.removeAttribute("data-show");
+
+        // Disable the event listeners
+        instance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: "eventListeners", enabled: false },
+          ],
+        }));
+      });
+
+      //   离开销毁
+    </script>
+  </body>
+</html>

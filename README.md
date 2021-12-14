@@ -16,3 +16,4 @@
 6. [颜色过渡卡片](https://zmsama.github.io/Javascript-css-exercise/颜色过渡卡片)
 7. [CSS悬停效果之字形D](https://zmsama.github.io/Javascript-css-exercise/CSS悬停效果之字形D)
 8. [创建css图标悬效果](https://zmsama.github.io/Javascript-css-exercise/创建css图标悬效果)
+9. [鼠标浮动工具](https://zmsama.github.io/Javascript-css-exercise/鼠标浮动工具)
