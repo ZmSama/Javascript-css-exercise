@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  height: 100vh;
+}
+.text {
+  font-size: 6rem;
+  color: #fab1a0;
+  text-shadow: 0 0 20px #fab1a0;
+  position: relative;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 20px;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #e84393;
+  z-index: -2;
+  filter: blur(40px);
+  opacity: 0.5;
+}
