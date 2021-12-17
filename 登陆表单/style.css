@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("./img.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.form {
+  height: 500px;
+  width: 700px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 1px #ccc;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.form .left {
+  width: 50%;
+  height: 100%;
+  background: url(./img.jpg);
+  background-size: cover;
+  background-position: -150px;
+}
+.form .right {
+  width: 50%;
+  height: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.form .right form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  row-gap: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #a29bfe;
+  transition: 0.3s ease-in-out;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #fab1a0;
+}
+
+.form button {
+  line-height: 40px;
+  border: none;
+  background: #fab1a0;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form a {
+  text-decoration: none;
+}
