@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url(./img.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formBox {
+  width: 300px;
+  height: 400px;
+  background: #a29bfe;
+  position: relative;
+  border-radius: 8px;
+  background-color: rgba(236, 203, 205, 0.6);
+  padding: 20px;
+  box-shadow: 2px 2px 16px 2px #fff;
+}
+
+.formBox .avater {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(146, 223, 246);
+}
+.avater img {
+  width: 100%;
+  height: 100%;
+}
+form {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(253, 121, 168, 1);
+  line-height: 40px;
+  background: inherit;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid rgba(85, 239, 196, 1);
+}
+
+input::placeholder {
+  color: aqua;
+}
+
+button[type="submit"] {
+  border: none;
+  line-height: 40px;
+  border-radius: 6px;
+  margin-top: 30px;
+  cursor: pointer;
+  background: rgba(197, 104, 126, 1);
+  font-size: 1rem;
+  color: #fff;
+}
