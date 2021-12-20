@@ -5,7 +5,7 @@
  * @Date: 2021-11-17 16:27:12
 -->
 # Javascript-css-exercise
-所有例子来自于B站“爱搞事的木易 ”up主，里面的例子有些许修改或者完善，不定时更新，后续也会加入b站其他js+css的特效案例。
+javascript+css+html练习案例。点击下面的链接可以直接查看，代码在对应文件夹，所有例子来源于网络。
 
 
 1. [3d视差滚动](https://zmsama.github.io/Javascript-css-exercise/3d视差滚动)
@@ -20,3 +20,4 @@
 10. [纯CSS霓虹灯文本效果](https://zmsama.github.io/Javascript-css-exercise/纯CSS霓虹灯文本效果)
 11. [登陆表单](https://zmsama.github.io/Javascript-css-exercise/登陆表单)
 12. [透明的登陆表单](https://zmsama.github.io/Javascript-css-exercise/透明的登陆表单)
+13. [Canvas背景动画](https://zmsama.github.io/Javascript-css-exercise/Canvas背景动画)
