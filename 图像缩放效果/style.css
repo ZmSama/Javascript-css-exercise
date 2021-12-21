@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: #81ecec; */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgbox {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 1px 1px 26px 2px #ffff;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.imgbox img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in;
+}
+
+/* .imgbox:hover.imgbox {
+  transform: scale(1.2) rotate(26deg);
+} */
+.imgbox:hover.imgbox img {
+  transform: scale(1.2);
+}

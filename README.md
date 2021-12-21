@@ -5,7 +5,7 @@
  * @Date: 2021-11-17 16:27:12
 -->
 # Javascript-css-exercise
-javascript+css+html练习案例。点击下面的链接可以直接查看，代码在对应文件夹，所有例子来源于网络。
+javascript+css+html练习案例。点击下面的链接可以直接查看，代码在对应文件夹，灵感来源于网络。
 
 
 1. [3d视差滚动](https://zmsama.github.io/Javascript-css-exercise/3d视差滚动)
@@ -21,3 +21,4 @@ javascript+css+html练习案例。点击下面的链接可以直接查看，代�
 11. [登陆表单](https://zmsama.github.io/Javascript-css-exercise/登陆表单)
 12. [透明的登陆表单](https://zmsama.github.io/Javascript-css-exercise/透明的登陆表单)
 13. [Canvas背景动画](https://zmsama.github.io/Javascript-css-exercise/Canvas背景动画)
+14. [图像缩放效果](https://zmsama.github.io/Javascript-css-exercise/图像缩放效果)

@@ -91,5 +91,5 @@ requestAnimationFrame(() => {
       let ball = ballArr[index];
       ball.show();
     }
-  }, 60);
+  }, 40);
 });
