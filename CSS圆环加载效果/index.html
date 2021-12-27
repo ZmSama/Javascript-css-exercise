@@ -1,0 +1,50 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: ZmSama
+ * @Date: 2021-12-27 14:56:09
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS圆环加载动画</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #34495e;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        background: transparent;
+        border-radius: 50%;
+        border: 10px solid #fff;
+        border-top: 10px solid #3498db;
+        animation: animate 1s infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>

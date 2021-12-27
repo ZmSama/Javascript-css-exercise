@@ -24,3 +24,4 @@ javascript+css+html练习案例。点击下面的链接可以直接查看，代�
 14. [图像缩放效果](https://zmsama.github.io/Javascript-css-exercise/图像缩放效果)
 15. [菜单悬停效果](https://zmsama.github.io/Javascript-css-exercise/菜单悬停效果)
 16. [图标悬停效果](https://zmsama.github.io/Javascript-css-exercise/图标悬停效果)
+17. [CSS圆环加载动画](https://zmsama.github.io/Javascript-css-exercise/CSS圆环加载动画)
