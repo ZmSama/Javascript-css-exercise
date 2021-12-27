@@ -22,3 +22,4 @@ javascript+css+html练习案例。点击下面的链接可以直接查看，代�
 12. [透明的登陆表单](https://zmsama.github.io/Javascript-css-exercise/透明的登陆表单)
 13. [Canvas背景动画](https://zmsama.github.io/Javascript-css-exercise/Canvas背景动画)
 14. [图像缩放效果](https://zmsama.github.io/Javascript-css-exercise/图像缩放效果)
+15. [菜单悬停效果](https://zmsama.github.io/Javascript-css-exercise/菜单悬停效果)
